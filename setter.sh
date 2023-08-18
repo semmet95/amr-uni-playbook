@@ -27,3 +27,6 @@ mv minikube-linux-amd64 ~/.local/bin/minikube
 
 # ensure kubectl is installed
 minikube version
+
+##----------------start a minikube cluster---------------##
+minikube start --memory 6144 --cpus 3
