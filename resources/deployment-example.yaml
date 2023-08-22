@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-example
+spec:
+  selector:
+    matchLabels:
+      run: my-deployment
+  template:
+    metadata:
+      labels:
+          run: my-deployment
+    spec:
+      containers:
+      - name: example1
+        image: springcommunity/spring-framework-petclinic
+        ports:
+        - containerPort: 8080
