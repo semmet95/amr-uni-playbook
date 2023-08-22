@@ -4,9 +4,12 @@
 - talk about how having multiple container helps
 - multi container example, explore volume mounting here, briefly mention labels and that it will come into picture later
 - move to a simple deployment
+- show an example of liveness probe here by pointing to the wrong port
 - show the app by port forwarding
 - create service, explain selctors, labels, and port forwarding here
 - scale up the deployment and show that service endpoints get updated
 - use the reader deployment to read the multi-dep pod's logs
 - show how the pods can communicate freely but the IP has to be hardcoded and how services help with that, throw back to the label mentioned in #5
 - give an exercise of turning the multi-dep pod to a deployment, expose using a service, scale up to 3, print timestamp in different timezones, then read from reader to see which pod it connects to
+- talk about taints and tolerations
+- use the last point to segue into daemonsets
