@@ -30,3 +30,9 @@ minikube version
 
 ##----------------start a minikube cluster---------------##
 minikube start --memory 6144 --cpus 3
+
+##----------------add nodes to the cluster---------------##
+minikube node add
+
+##-------------------add taint to a node-----------------##
+kubectl taint nodes minikube-m04 allocatedaemonset=true:NoSchedule

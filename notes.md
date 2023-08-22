@@ -4,6 +4,7 @@
 - talk about how having multiple container helps
 - multi container example, explore volume mounting here, briefly mention labels and that it will come into picture later
 - move to a simple deployment
+- show the impact of readiness probe in the output of kubectl
 - show an example of liveness probe here by pointing to the wrong port
 - show the app by port forwarding
 - create service, explain selctors, labels, and port forwarding here

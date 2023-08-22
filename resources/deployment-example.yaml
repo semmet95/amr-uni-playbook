@@ -9,10 +9,16 @@ spec:
   template:
     metadata:
       labels:
-          app: my-first-app
+        app: my-first-app
     spec:
       containers:
       - name: example1
         image: springcommunity/spring-framework-petclinic
         ports:
         - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 20
