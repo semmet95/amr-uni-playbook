@@ -1,0 +1,12 @@
+- start with a dedicated namespace
+- simple pod example, with nginx container
+- talk about how a pod can have multiple containers
+- talk about how having multiple container helps
+- multi container example, explore volume mounting here
+- move to a simple deployment
+- show the app by port forwarding
+- create service, explain selctors, labels, and port forwarding here
+- scale up the deployment and show that service endpoints get updated
+- use the reader deployment to read the multi-dep pod's logs
+- show how the pods can communicate freely but the IP has to be hardcoded and how services help with that
+- give an exercise of turning the multi-dep pod to a deployment, expose using a service, scale up to 3, print timestamp in different timezones, then read from reader to see which pod it connects to

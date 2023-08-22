@@ -5,11 +5,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: my-deployment
+      app: my-first-app
   template:
     metadata:
       labels:
-          run: my-deployment
+          app: my-first-app
     spec:
       containers:
       - name: example1

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reader-deployment
+spec:
+  selector:
+    matchLabels:
+      app: reader-deployment
+  template:
+    metadata:
+      labels:
+          app: reader-deployment
+    spec:
+      containers:
+      - name: reader-deployment
+        image: curlimages/curl
+        command:
+        - sleep
+        - infinity
