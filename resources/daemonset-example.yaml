@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ds-example
+spec:
+  selector:
+    matchLabels:
+      app: ds-example
+  template:
+    metadata:
+      labels:
+        app: ds-example
+    spec:
+      tolerations:
+      - key: allocatedaemonset
+        value: "true"
+        operator: Equal
+        effect: NoSchedule
+      containers:
+      - name: ds-example
+        image: nginx
+        resources:
+          limits:
+            memory: 200Mi
+          requests:
+            cpu: 50m
+            memory: 100Mi

@@ -13,4 +13,9 @@
 - show how the pods can communicate freely but the IP has to be hardcoded and how services help with that, throw back to the label mentioned in #5
 - give an exercise of turning the multi-dep pod to a deployment, expose using a service, scale up to 3, print timestamp in different timezones, then read from reader to see which pod it connects to
 - talk about taints and tolerations
+- add 2 new nodes
+- taint one of them
 - use the last point to segue into daemonsets
+- explain daemonset and how allocating minimal resources is part of it
+- show how one node didn't get the daemon set
+- add toleration and get the daemonset on the tainted node as well
