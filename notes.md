@@ -1,5 +1,5 @@
 - start with a dedicated namespace
-- simple pod example, with nginx container
+- simple pod example, with ubuntu container
 - talk about how a pod can have multiple containers
 - talk about how having multiple container helps
 - multi container example, explore volume mounting here, briefly mention labels and that it will come into picture later
