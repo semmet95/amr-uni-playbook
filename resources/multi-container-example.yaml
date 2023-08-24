@@ -16,8 +16,8 @@ spec:
     volumeMounts:
     - name: html
       mountPath: /usr/share/nginx/html
-  - name: debian
-    image: debian
+  - name: ubuntu
+    image: ubuntu
     volumeMounts:
     - name: html
       mountPath: /html
